@@ -123,7 +123,7 @@ public class CelestiumPickaxeItem extends PickaxeItem {
     private ItemStack smeltItem(ServerWorld world, ItemStack input) {
         return world.getRecipeManager()
                 .getFirstMatch(RecipeType.SMELTING, new net.minecraft.inventory.SimpleInventory(input), world)
-                .map(recipe -> recipe.getOutput(world.getRegistryManager()).copy())
+                .map(recipeEntry -> recipeEntry.value().getOutput(world.getRegistryManager()).copy())
                 .orElse(ItemStack.EMPTY);
     }
     
