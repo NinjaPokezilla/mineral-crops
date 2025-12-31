@@ -4,7 +4,7 @@ import com.mineralcrops.item.BioFuelItem;
 import com.mineralcrops.registry.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.OreBlock;
+
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -74,8 +74,16 @@ public class CelestiumPickaxeItem extends PickaxeItem {
     }
     
     private boolean isOre(BlockState state) {
+        // Use tag-based ore detection for 1.20.4 compatibility
         return state.isIn(BlockTags.PICKAXE_MINEABLE) && 
-               (state.getBlock() instanceof OreBlock || 
+               (state.isIn(BlockTags.GOLD_ORES) ||
+                state.isIn(BlockTags.IRON_ORES) ||
+                state.isIn(BlockTags.COPPER_ORES) ||
+                state.isIn(BlockTags.COAL_ORES) ||
+                state.isIn(BlockTags.DIAMOND_ORES) ||
+                state.isIn(BlockTags.EMERALD_ORES) ||
+                state.isIn(BlockTags.LAPIS_ORES) ||
+                state.isIn(BlockTags.REDSTONE_ORES) ||
                 state.getBlock().getTranslationKey().contains("ore"));
     }
     
