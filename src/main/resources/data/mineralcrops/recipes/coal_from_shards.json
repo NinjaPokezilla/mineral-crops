@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SSS",
+        "SSS",
+        "SSS"
+    ],
+    "key": {
+        "S": {
+            "item": "mineralcrops:coal_shard"
+        }
+    },
+    "result": {
+        "item": "minecraft:coal",
+        "count": 1
+    }
+}

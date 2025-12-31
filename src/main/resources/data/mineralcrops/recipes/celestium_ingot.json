@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SSS",
+        "SSS",
+        "SSS"
+    ],
+    "key": {
+        "S": {
+            "item": "mineralcrops:celestium_shard"
+        }
+    },
+    "result": {
+        "item": "mineralcrops:celestium_ingot",
+        "count": 1
+    }
+}

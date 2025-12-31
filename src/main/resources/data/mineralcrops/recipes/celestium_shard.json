@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DDD",
+        "EEE",
+        "NAQ"
+    ],
+    "key": {
+        "D": {
+            "item": "mineralcrops:diamond_shard"
+        },
+        "E": {
+            "item": "mineralcrops:emerald_shard"
+        },
+        "N": {
+            "item": "mineralcrops:netherite_shard"
+        },
+        "A": {
+            "item": "minecraft:amethyst_shard"
+        },
+        "Q": {
+            "item": "minecraft:quartz"
+        }
+    },
+    "result": {
+        "item": "mineralcrops:celestium_shard",
+        "count": 1
+    }
+}

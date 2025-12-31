@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SSS",
+        "SSS",
+        "SSS"
+    ],
+    "key": {
+        "S": {
+            "item": "mineralcrops:diamond_shard"
+        }
+    },
+    "result": {
+        "item": "minecraft:diamond",
+        "count": 1
+    }
+}

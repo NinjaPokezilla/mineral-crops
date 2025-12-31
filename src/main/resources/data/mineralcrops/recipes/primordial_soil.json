@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "NEN",
+        "ESE",
+        "NEN"
+    ],
+    "key": {
+        "E": {
+            "item": "mineralcrops:energized_soil"
+        },
+        "N": {
+            "item": "mineralcrops:netherite_shard"
+        },
+        "S": {
+            "item": "minecraft:nether_star"
+        }
+    },
+    "result": {
+        "item": "mineralcrops:primordial_soil",
+        "count": 4
+    }
+}

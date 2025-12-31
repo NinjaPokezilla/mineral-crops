@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "RER",
+        "EGE",
+        "RER"
+    ],
+    "key": {
+        "E": {
+            "item": "mineralcrops:enriched_soil"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "G": {
+            "item": "minecraft:glowstone"
+        }
+    },
+    "result": {
+        "item": "mineralcrops:energized_soil",
+        "count": 4
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "B B",
+        "B B"
+    ],
+    "key": {
+        "B": {
+            "item": "mineralcrops:celestium_block"
+        }
+    },
+    "result": {
+        "item": "mineralcrops:celestium_boots",
+        "count": 1
+    }
+}

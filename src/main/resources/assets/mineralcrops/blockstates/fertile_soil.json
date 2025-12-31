@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "mineralcrops:block/fertile_soil"
+        }
+    }
+}

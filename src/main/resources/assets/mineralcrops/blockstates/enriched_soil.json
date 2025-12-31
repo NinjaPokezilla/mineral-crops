@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "mineralcrops:block/enriched_soil"
+        }
+    }
+}

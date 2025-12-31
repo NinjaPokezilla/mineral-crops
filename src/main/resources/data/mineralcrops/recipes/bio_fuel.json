@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "mineralcrops:energy_leaves"
+        },
+        {
+            "item": "mineralcrops:energy_leaves"
+        },
+        {
+            "item": "mineralcrops:energy_leaves"
+        },
+        {
+            "item": "mineralcrops:energy_leaves"
+        }
+    ],
+    "result": {
+        "item": "mineralcrops:bio_fuel",
+        "count": 1
+    }
+}

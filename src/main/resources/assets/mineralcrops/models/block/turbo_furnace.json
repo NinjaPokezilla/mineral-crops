@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "mineralcrops:block/turbo_furnace_top",
+        "front": "mineralcrops:block/turbo_furnace_front",
+        "side": "mineralcrops:block/turbo_furnace_side"
+    }
+}

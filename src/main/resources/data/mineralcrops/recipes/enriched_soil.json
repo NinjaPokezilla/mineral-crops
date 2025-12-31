@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "LFL",
+        "FLF",
+        "LFL"
+    ],
+    "key": {
+        "F": {
+            "item": "mineralcrops:fertile_soil"
+        },
+        "L": {
+            "item": "minecraft:lapis_lazuli"
+        }
+    },
+    "result": {
+        "item": "mineralcrops:enriched_soil",
+        "count": 4
+    }
+}

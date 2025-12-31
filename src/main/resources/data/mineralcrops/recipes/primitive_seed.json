@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "WWW",
+        " B ",
+        " B "
+    ],
+    "key": {
+        "W": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "B": {
+            "item": "minecraft:bone_meal"
+        }
+    },
+    "result": {
+        "item": "mineralcrops:primitive_seed",
+        "count": 4
+    }
+}

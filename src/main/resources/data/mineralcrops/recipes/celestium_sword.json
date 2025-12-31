@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "B",
+        "B",
+        "S"
+    ],
+    "key": {
+        "B": {
+            "item": "mineralcrops:celestium_block"
+        },
+        "S": {
+            "item": "mineralcrops:celestial_stick"
+        }
+    },
+    "result": {
+        "item": "mineralcrops:celestium_sword",
+        "count": 1
+    }
+}

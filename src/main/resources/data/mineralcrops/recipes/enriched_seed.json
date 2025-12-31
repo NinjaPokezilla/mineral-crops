@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PPP",
+        "PLP",
+        "PPP"
+    ],
+    "key": {
+        "P": {
+            "item": "mineralcrops:primitive_seed"
+        },
+        "L": {
+            "item": "minecraft:lapis_block"
+        }
+    },
+    "result": {
+        "item": "mineralcrops:enriched_seed",
+        "count": 4
+    }
+}
