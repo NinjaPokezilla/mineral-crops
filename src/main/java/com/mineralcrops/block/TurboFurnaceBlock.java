@@ -73,7 +73,10 @@ public class TurboFurnaceBlock extends BlockWithEntity {
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, ModBlockEntities.TURBO_FURNACE_ENTITY, TurboFurnaceBlockEntity::tick);
+        if (world.isClient()) {
+            return null;
+        }
+        return type == ModBlockEntities.TURBO_FURNACE_ENTITY ? (BlockEntityTicker<T>) (world1, pos, state1, blockEntity) -> TurboFurnaceBlockEntity.tick(world1, pos, state1, (TurboFurnaceBlockEntity) blockEntity) : null;
     }
     
     @Override
