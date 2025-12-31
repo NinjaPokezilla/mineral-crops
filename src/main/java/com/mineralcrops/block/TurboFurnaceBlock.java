@@ -20,6 +20,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
+import com.mojang.serialization.MapCodec;
 import org.jetbrains.annotations.Nullable;
 
 public class TurboFurnaceBlock extends BlockWithEntity {
@@ -34,6 +35,11 @@ public class TurboFurnaceBlock extends BlockWithEntity {
     @Override
     public BlockRenderType getRenderType(BlockState state) {
         return BlockRenderType.MODEL;
+    }
+    
+    @Override
+    protected MapCodec<? extends BlockWithEntity> getCodec() {
+        return null; // Not needed for gameplay, just required by API
     }
     
     @Override
@@ -65,7 +71,7 @@ public class TurboFurnaceBlock extends BlockWithEntity {
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return validateTicker(type, ModBlockEntities.TURBO_FURNACE_ENTITY, TurboFurnaceBlockEntity::tick);
+        return validateBlockEntityTicker(type, ModBlockEntities.TURBO_FURNACE_ENTITY, TurboFurnaceBlockEntity::tick);
     }
     
     @Override

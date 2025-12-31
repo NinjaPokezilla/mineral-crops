@@ -142,13 +142,13 @@ public class TurboFurnaceBlockEntity extends BlockEntity implements ExtendedScre
             for (int i = 0; i < 4; i++) {
                 ItemStack inputStack = entity.inventory.get(INPUT_SLOTS[i]);
                 if (!inputStack.isEmpty()) {
-                    Optional<SmeltingRecipe> recipe = entity.getRecipe(inputStack);
-                    if (recipe.isPresent()) {
+                    var recipeEntry = entity.getRecipe(inputStack);
+                    if (recipeEntry.isPresent()) {
                         entity.cookingProgress[i] += 4; // 4x faster
                         entity.cookingTotalTime[i] = 200; // Standard smelt time
                         
                         if (entity.cookingProgress[i] >= entity.cookingTotalTime[i]) {
-                            ItemStack result = recipe.get().getOutput(world.getRegistryManager()).copy();
+                            ItemStack result = recipeEntry.get().value().getResult(world.getRegistryManager()).copy();
                             ItemStack outputStack = entity.inventory.get(OUTPUT_SLOTS[i]);
                             
                             if (outputStack.isEmpty()) {
@@ -194,7 +194,7 @@ public class TurboFurnaceBlockEntity extends BlockEntity implements ExtendedScre
         return false;
     }
     
-    private Optional<SmeltingRecipe> getRecipe(ItemStack input) {
+    private Optional<RecipeEntry<SmeltingRecipe>> getRecipe(ItemStack input) {
         SimpleInventory inv = new SimpleInventory(input);
         return world.getRecipeManager().getFirstMatch(RecipeType.SMELTING, inv, world);
     }
