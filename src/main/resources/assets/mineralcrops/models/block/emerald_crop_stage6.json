@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+        "cross": "mineralcrops:block/emerald_crop_stage6"
+    }
+}

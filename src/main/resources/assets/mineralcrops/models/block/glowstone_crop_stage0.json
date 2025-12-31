@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+        "cross": "mineralcrops:block/glowstone_crop_stage0"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " I ",
+        "IBI",
+        " I "
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "B": {
+            "item": "mineralcrops:bronze_watering_can"
+        }
+    },
+    "result": {
+        "item": "mineralcrops:silver_watering_can",
+        "count": 1
+    }
+}

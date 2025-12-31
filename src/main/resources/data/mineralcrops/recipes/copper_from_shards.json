@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "mineralcrops:copper_shard"
+        },
+        {
+            "item": "mineralcrops:copper_shard"
+        },
+        {
+            "item": "mineralcrops:copper_shard"
+        },
+        {
+            "item": "mineralcrops:copper_shard"
+        },
+        {
+            "item": "mineralcrops:copper_shard"
+        },
+        {
+            "item": "mineralcrops:copper_shard"
+        },
+        {
+            "item": "mineralcrops:copper_shard"
+        },
+        {
+            "item": "mineralcrops:copper_shard"
+        },
+        {
+            "item": "mineralcrops:copper_shard"
+        }
+    ],
+    "result": {
+        "item": "minecraft:copper_ingot",
+        "count": 1
+    }
+}

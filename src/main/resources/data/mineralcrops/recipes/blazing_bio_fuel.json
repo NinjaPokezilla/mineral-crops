@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "mineralcrops:concentrated_bio_fuel"
+        },
+        {
+            "item": "mineralcrops:concentrated_bio_fuel"
+        },
+        {
+            "item": "minecraft:blaze_powder"
+        },
+        {
+            "item": "minecraft:blaze_powder"
+        }
+    ],
+    "result": {
+        "item": "mineralcrops:blazing_bio_fuel",
+        "count": 1
+    }
+}

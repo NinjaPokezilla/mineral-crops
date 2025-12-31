@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "mineralcrops:glowstone_shard"
+        },
+        {
+            "item": "mineralcrops:glowstone_shard"
+        },
+        {
+            "item": "mineralcrops:glowstone_shard"
+        },
+        {
+            "item": "mineralcrops:glowstone_shard"
+        },
+        {
+            "item": "mineralcrops:glowstone_shard"
+        },
+        {
+            "item": "mineralcrops:glowstone_shard"
+        },
+        {
+            "item": "mineralcrops:glowstone_shard"
+        },
+        {
+            "item": "mineralcrops:glowstone_shard"
+        },
+        {
+            "item": "mineralcrops:glowstone_shard"
+        }
+    ],
+    "result": {
+        "item": "minecraft:glowstone_dust",
+        "count": 1
+    }
+}

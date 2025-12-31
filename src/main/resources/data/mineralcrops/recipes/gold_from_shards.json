@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "mineralcrops:gold_shard"
+        },
+        {
+            "item": "mineralcrops:gold_shard"
+        },
+        {
+            "item": "mineralcrops:gold_shard"
+        },
+        {
+            "item": "mineralcrops:gold_shard"
+        },
+        {
+            "item": "mineralcrops:gold_shard"
+        },
+        {
+            "item": "mineralcrops:gold_shard"
+        },
+        {
+            "item": "mineralcrops:gold_shard"
+        },
+        {
+            "item": "mineralcrops:gold_shard"
+        },
+        {
+            "item": "mineralcrops:gold_shard"
+        }
+    ],
+    "result": {
+        "item": "minecraft:gold_ingot",
+        "count": 1
+    }
+}

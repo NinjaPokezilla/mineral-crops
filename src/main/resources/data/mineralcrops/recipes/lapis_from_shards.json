@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "mineralcrops:lapis_shard"
+        },
+        {
+            "item": "mineralcrops:lapis_shard"
+        },
+        {
+            "item": "mineralcrops:lapis_shard"
+        },
+        {
+            "item": "mineralcrops:lapis_shard"
+        },
+        {
+            "item": "mineralcrops:lapis_shard"
+        },
+        {
+            "item": "mineralcrops:lapis_shard"
+        },
+        {
+            "item": "mineralcrops:lapis_shard"
+        },
+        {
+            "item": "mineralcrops:lapis_shard"
+        },
+        {
+            "item": "mineralcrops:lapis_shard"
+        }
+    ],
+    "result": {
+        "item": "minecraft:lapis_lazuli",
+        "count": 1
+    }
+}

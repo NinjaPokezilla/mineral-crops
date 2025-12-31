@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+        "cross": "mineralcrops:block/copper_crop_stage6"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "mineralcrops:amethyst_shard_item"
+        },
+        {
+            "item": "mineralcrops:amethyst_shard_item"
+        },
+        {
+            "item": "mineralcrops:amethyst_shard_item"
+        },
+        {
+            "item": "mineralcrops:amethyst_shard_item"
+        },
+        {
+            "item": "mineralcrops:amethyst_shard_item"
+        },
+        {
+            "item": "mineralcrops:amethyst_shard_item"
+        },
+        {
+            "item": "mineralcrops:amethyst_shard_item"
+        },
+        {
+            "item": "mineralcrops:amethyst_shard_item"
+        },
+        {
+            "item": "mineralcrops:amethyst_shard_item"
+        }
+    ],
+    "result": {
+        "item": "minecraft:amethyst_shard",
+        "count": 1
+    }
+}

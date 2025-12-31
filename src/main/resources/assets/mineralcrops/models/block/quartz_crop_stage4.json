@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+        "cross": "mineralcrops:block/quartz_crop_stage4"
+    }
+}

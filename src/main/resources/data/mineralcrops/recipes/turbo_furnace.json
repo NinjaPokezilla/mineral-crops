@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BBB",
+        "BFB",
+        "BBB"
+    ],
+    "key": {
+        "B": {
+            "item": "minecraft:iron_block"
+        },
+        "F": {
+            "item": "minecraft:blast_furnace"
+        }
+    },
+    "result": {
+        "item": "mineralcrops:turbo_furnace",
+        "count": 1
+    }
+}

@@ -37,9 +37,11 @@ public class TurboFurnaceBlock extends BlockWithEntity {
         return BlockRenderType.MODEL;
     }
     
+    public static final MapCodec<TurboFurnaceBlock> CODEC = createCodec(TurboFurnaceBlock::new);
+    
     @Override
     protected MapCodec<? extends BlockWithEntity> getCodec() {
-        return null; // Not needed for gameplay, just required by API
+        return CODEC;
     }
     
     @Override

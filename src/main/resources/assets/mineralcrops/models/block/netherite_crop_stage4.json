@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+        "cross": "mineralcrops:block/netherite_crop_stage4"
+    }
+}

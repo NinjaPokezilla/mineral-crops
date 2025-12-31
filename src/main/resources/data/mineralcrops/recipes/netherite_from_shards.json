@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "mineralcrops:netherite_shard"
+        },
+        {
+            "item": "mineralcrops:netherite_shard"
+        },
+        {
+            "item": "mineralcrops:netherite_shard"
+        },
+        {
+            "item": "mineralcrops:netherite_shard"
+        },
+        {
+            "item": "mineralcrops:netherite_shard"
+        },
+        {
+            "item": "mineralcrops:netherite_shard"
+        },
+        {
+            "item": "mineralcrops:netherite_shard"
+        },
+        {
+            "item": "mineralcrops:netherite_shard"
+        },
+        {
+            "item": "mineralcrops:netherite_shard"
+        }
+    ],
+    "result": {
+        "item": "minecraft:netherite_scrap",
+        "count": 1
+    }
+}
