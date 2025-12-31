@@ -1,27 +1,19 @@
 package com.mineralcrops.item.celestium;
 
-import com.mineralcrops.item.BioFuelItem;
 import com.mineralcrops.registry.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
-import net.minecraft.item.MiningToolItem;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.recipe.RecipeType;
-import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Box;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -29,7 +21,6 @@ import java.util.*;
 
 public class CelestiumPickaxeItem extends PickaxeItem {
     private static final int VEIN_MINER_MAX = 32;
-    private static final double MAGNET_RADIUS = 8.0;
     
     public CelestiumPickaxeItem(Settings settings) {
         super(CelestiumSwordItem.CelestiumToolMaterial.INSTANCE, 3, -2.8f, settings);
@@ -121,16 +112,17 @@ public class CelestiumPickaxeItem extends PickaxeItem {
     }
     
     private ItemStack smeltItem(ServerWorld world, ItemStack input) {
+        // Use getResult() which is the correct method in 1.20.4
         return world.getRecipeManager()
-                .getFirstMatch(RecipeType.SMELTING, new net.minecraft.inventory.SimpleInventory(input), world)
-                .map(recipeEntry -> recipeEntry.value().getOutput(world.getRegistryManager()).copy())
+                .getFirstMatch(RecipeType.SMELTING, new SimpleInventory(input), world)
+                .map(recipeEntry -> recipeEntry.value().getResult(world.getRegistryManager()).copy())
                 .orElse(ItemStack.EMPTY);
     }
     
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.literal("§bVein Miner§r: Mines connected ores (max 32)").formatted(Formatting.AQUA));
-        tooltip.add(Text.literal("§6Auto-Smelt§r: Requires Concentrated Bio-Fuel").formatted(Formatting.GOLD));
-        tooltip.add(Text.literal("§dMagnet§r: Items pulled to player during vein mining").formatted(Formatting.LIGHT_PURPLE));
+        tooltip.add(Text.literal("Vein Miner: Mines connected ores (max 32)").formatted(Formatting.AQUA));
+        tooltip.add(Text.literal("Auto-Smelt: Requires Concentrated Bio-Fuel").formatted(Formatting.GOLD));
+        tooltip.add(Text.literal("Magnet: Items pulled to player during vein mining").formatted(Formatting.LIGHT_PURPLE));
     }
 }

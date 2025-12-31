@@ -1,15 +1,11 @@
 package com.mineralcrops.item.celestium;
 
-import com.mineralcrops.block.FertileSoilBlock;
-import com.mineralcrops.registry.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.HoeItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.particle.ParticleTypes;
@@ -19,7 +15,6 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
-import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -85,7 +80,7 @@ public class CelestiumHoeItem extends HoeItem {
         }
         
         // Mass Harvest: Harvest 7x7 area
-        if (clickedState.getBlock() instanceof CropBlock crop) {
+        if (clickedState.getBlock() instanceof CropBlock) {
             int harvested = 0;
             int replanted = 0;
             
@@ -122,18 +117,16 @@ public class CelestiumHoeItem extends HoeItem {
     
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.literal("§aMass Harvest§r: Harvests 7x7 area").formatted(Formatting.GREEN));
-        tooltip.add(Text.literal("§bAuto-Replant§r: Replants crops automatically").formatted(Formatting.AQUA));
-        tooltip.add(Text.literal("§dGrowth Pulse§r: Shift+Click to accelerate 3x3 (30s CD)").formatted(Formatting.LIGHT_PURPLE));
+        tooltip.add(Text.literal("Mass Harvest: Harvests 7x7 area").formatted(Formatting.GREEN));
+        tooltip.add(Text.literal("Auto-Replant: Replants crops automatically").formatted(Formatting.AQUA));
+        tooltip.add(Text.literal("Growth Pulse: Shift+Click to accelerate 3x3 (30s CD)").formatted(Formatting.LIGHT_PURPLE));
         
         // Show cooldown
-        if (stack.hasNbt()) {
+        if (stack.hasNbt() && world != null) {
             long lastUse = stack.getNbt().getLong("LastGrowthPulse");
-            if (world != null) {
-                long remaining = Math.max(0, (GROWTH_PULSE_COOLDOWN - (world.getTime() - lastUse)) / 20);
-                if (remaining > 0) {
-                    tooltip.add(Text.literal("Cooldown: " + remaining + "s").formatted(Formatting.GRAY));
-                }
+            long remaining = Math.max(0, (GROWTH_PULSE_COOLDOWN - (world.getTime() - lastUse)) / 20);
+            if (remaining > 0) {
+                tooltip.add(Text.literal("Cooldown: " + remaining + "s").formatted(Formatting.GRAY));
             }
         }
     }
