@@ -20,7 +20,6 @@ public class FertileSoilBlock extends FarmlandBlock {
         return 0f; // Não suporta outros tiers
     }
     
-    @Override
     public boolean isFertile(BlockView world, BlockPos pos) {
         return true;
     }
